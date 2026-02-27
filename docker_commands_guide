@@ -1,0 +1,8 @@
+- Dockerfile - Instructions for building the Docker image.
+- memory_info.py - Python script to collect system info.
+- requirements.txt - Project dependencies.
+- output.txt - Example output of the script.
+
+docker build -t psutil-monitor .
+
+docker run --rm -v "$(pwd)/data:/app/data" psutil-monitor
